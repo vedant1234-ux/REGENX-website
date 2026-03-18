@@ -1,4 +1,4 @@
-import { RegeneraxLogo } from "./SuncLogo";
+import { RegeneraxLogo } from "./RegeneraxLogo";
 
 export const Footer = () => (
   <footer className="border-t border-border py-12 px-8 md:px-16">

@@ -54,10 +54,10 @@ export const ProblemSection = () => (
         transition={{ ...transition, delay: 0.1 }}
         className="border border-border p-8 md:p-10"
       >
-        <h3 className="font-display text-lg font-bold mb-1">
+        <h3 className="font-display text-base sm:text-lg font-bold mb-1">
           Deep Cycle Lead-Acid Battery Life Cycle
         </h3>
-        <p className="text-foreground/50 text-sm mb-8">Capacity vs. Cycles</p>
+        <p className="text-foreground/50 text-[10px] sm:text-sm mb-6 sm:mb-8">Capacity vs. Cycles</p>
 
         {/* Simplified chart representation */}
         <div className="relative h-48 mb-6">
@@ -72,16 +72,38 @@ export const ProblemSection = () => (
 
           {/* Chart area */}
           <div className="ml-10 h-full relative">
-            <svg
+            <motion.svg
               viewBox="0 0 300 160"
-              className="w-full h-full"
-              preserveAspectRatio="none"
+              className="w-full h-full overflow-visible"
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
             >
               <defs>
                 <linearGradient id="curveGrad" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0.3" />
                   <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="0.02" />
                 </linearGradient>
+                <clipPath id="chartClip">
+                  <motion.rect
+                    x="0"
+                    y="0"
+                    height="160"
+                    variants={{
+                      initial: { width: 0 },
+                      animate: {
+                        width: 300,
+                        transition: {
+                          duration: 2.5,
+                          ease: [0.65, 0, 0.35, 1],
+                          repeat: Infinity,
+                          repeatType: "reverse",
+                          repeatDelay: 0.5
+                        }
+                      }
+                    }}
+                  />
+                </clipPath>
               </defs>
               {/* Grid lines */}
               <line x1="0" y1="0" x2="300" y2="0" stroke="hsl(var(--border))" strokeWidth="0.5" />
@@ -92,14 +114,35 @@ export const ProblemSection = () => (
               {/* Vertical phase lines */}
               <line x1="75" y1="0" x2="75" y2="160" stroke="hsl(var(--border))" strokeWidth="0.5" strokeDasharray="4,4" />
               <line x1="195" y1="0" x2="195" y2="160" stroke="hsl(var(--border))" strokeWidth="0.5" strokeDasharray="4,4" />
-              {/* Curve: rise then decline */}
+              {/* Area Fill: Revealing via clipPath */}
               <path
-                d="M 0 140 C 30 80, 60 15, 75 10 L 195 10 C 220 15, 260 60, 300 150"
+                d="M 0 140 C 30 80, 60 15, 75 10 L 195 10 C 220 15, 260 60, 300 150 V 160 H 0 Z"
                 fill="url(#curveGrad)"
+                clipPath="url(#chartClip)"
+                stroke="none"
+              />
+
+              {/* Curve Stroke: Drawing via pathLength */}
+              <motion.path
+                d="M 0 140 C 30 80, 60 15, 75 10 L 195 10 C 220 15, 260 60, 300 150"
+                fill="none"
                 stroke="hsl(var(--primary))"
                 strokeWidth="2"
+                variants={{
+                  initial: { pathLength: 0 },
+                  animate: {
+                    pathLength: 1,
+                    transition: {
+                      duration: 2.5,
+                      ease: [0.65, 0, 0.35, 1],
+                      repeat: Infinity,
+                      repeatType: "reverse",
+                      repeatDelay: 0.5
+                    }
+                  }
+                }}
               />
-            </svg>
+            </motion.svg>
           </div>
         </div>
 
@@ -107,8 +150,8 @@ export const ProblemSection = () => (
         <div className="ml-10 flex">
           {phases.map((p, i) => (
             <div key={i} className="text-center" style={{ width: p.width }}>
-              <div className="text-xs font-mono text-primary font-bold">{p.label}</div>
-              <div className="text-[10px] text-muted-foreground mt-0.5">
+              <div className="text-[10px] sm:text-xs font-mono text-primary font-bold leading-none">{p.label}</div>
+              <div className="text-[8px] sm:text-[10px] text-muted-foreground mt-0.5 whitespace-nowrap">
                 {p.cycles} cycles
               </div>
             </div>
@@ -122,7 +165,7 @@ export const ProblemSection = () => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ ...transition, delay: 0.2 }}
-        className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-4"
+        className="grid grid-cols-1 gap-12 sm:gap-8 md:gap-4"
       >
         {/* Traditional */}
         <div className="flex flex-col items-center">

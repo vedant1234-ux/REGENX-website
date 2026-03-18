@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { RegeneraxLogo } from "./SuncLogo";
+import { RegeneraxLogo } from "./RegeneraxLogo";
 
 const navLinks = [
   { label: "HOME", href: "#" },

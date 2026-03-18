@@ -22,7 +22,7 @@ export const HeroSection = () => (
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={transition}
-        className="font-mono text-[10px] sm:text-xs tracking-[0.2em] text-primary mb-12"
+        className="font-mono text-[9px] xs:text-[10px] sm:text-xs tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-8 md:mb-12"
       >
         RegeneraX / INDIA'S PIONEER IN BATTERY REGENERATION SINCE 2012
       </motion.div>
@@ -31,7 +31,7 @@ export const HeroSection = () => (
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ...transition, delay: 0.15 }}
-        className="font-display text-5xl sm:text-7xl md:text-[8vw] lg:text-[6vw] font-bold leading-[0.9] tracking-[-0.04em] uppercase max-w-5xl"
+        className="font-display text-[clamp(2.5rem,10vw,5rem)] sm:text-7xl md:text-[8vw] lg:text-[6vw] font-bold leading-[1] sm:leading-[0.9] tracking-[-0.04em] uppercase max-w-5xl"
       >
         Battery{" "}
         <span className="text-primary">Regeneration</span>

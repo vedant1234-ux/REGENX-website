@@ -30,10 +30,10 @@ export const ContactSection = () => (
           Thank You!
         </h2>
         <p className="font-display text-2xl font-bold text-foreground/80 mt-2">
-          M A Joseph
+          RegeneraX Solutions
         </p>
         <p className="font-mono text-xs tracking-[0.1em] text-primary uppercase">
-          Energy Solutions Consultant
+          Sustainable Technology Lead
         </p>
         <p className="text-foreground/70 leading-relaxed text-lg mt-6">
           Ready to revolutionize your battery management? Get in touch with RegeneraX today.

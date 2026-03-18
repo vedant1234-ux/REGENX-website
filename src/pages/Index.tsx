@@ -4,7 +4,7 @@ import { PartnersBar } from "@/components/PartnersBar";
 import { AboutSection } from "@/components/AboutSection";
 import { JourneySection } from "@/components/JourneySection";
 import { VisionSection } from "@/components/VisionSection";
-import { RegeneraxSaysSection } from "@/components/SuncSaysSection";
+import { RegeneraxSaysSection } from "@/components/RegeneraxSaysSection";
 import { ValuesSection } from "@/components/ValuesSection";
 import { DegradationSection } from "@/components/DegradationSection";
 import { ProblemSection } from "@/components/ProblemSection";

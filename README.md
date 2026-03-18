@@ -1,4 +1,4 @@
-# SUN-C Battery Regeneration
+# RegeneraX Battery Regeneration
 
 India's Pioneer in Battery Regeneration Since 2012. In-house regeneration technology extending battery life, reducing carbon waste, and transforming battery management globally.
 

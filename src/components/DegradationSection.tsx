@@ -68,7 +68,7 @@ export const DegradationSection = () => {
   const activeIssue = issues[activeIndex];
 
   return (
-    <section className="py-[15vh] px-8 md:px-16 bg-muted">
+    <section className="py-[15vh] px-4 sm:px-8 md:px-16 bg-muted overflow-hidden">
       <div className="max-w-[1400px] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -92,9 +92,9 @@ export const DegradationSection = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ ...transition, delay: 0.1 }}
-            className="hidden md:flex col-span-4 justify-center items-center h-full sticky top-[20vh]"
+            className="flex col-span-12 md:col-span-4 justify-center items-center md:sticky md:top-[20vh] mb-8 md:mb-0"
           >
-            <div className="relative w-72 h-96 rounded-[2rem] flex items-center justify-center overflow-hidden">
+            <div className="relative w-48 h-64 md:w-72 md:h-96 rounded-[2rem] flex items-center justify-center overflow-hidden">
               
               {/* Background ambient glow based on active issue */}
               <motion.div 

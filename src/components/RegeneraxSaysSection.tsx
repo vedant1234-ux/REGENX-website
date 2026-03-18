@@ -4,7 +4,7 @@ import { Trophy } from "lucide-react";
 const transition = { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const };
 
 export const RegeneraxSaysSection = () => (
-  <section className="py-[12vh] px-8 md:px-16 border-t border-b border-border">
+  <section className="py-[12vh] px-4 sm:px-8 md:px-16 border-t border-b border-border">
     <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
       <motion.div
         initial={{ opacity: 0, x: -30 }}

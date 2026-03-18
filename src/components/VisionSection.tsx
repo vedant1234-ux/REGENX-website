@@ -4,7 +4,7 @@ import { Eye, Target } from "lucide-react";
 const transition = { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const };
 
 export const VisionSection = () => (
-  <section className="py-[15vh] px-8 md:px-16 max-w-[1400px] mx-auto">
+  <section className="py-[15vh] px-4 sm:px-8 md:px-16 max-w-[1400px] mx-auto">
     <div className="grid grid-cols-12 gap-6 md:gap-12">
       <motion.div
         initial={{ opacity: 0, y: 40 }}

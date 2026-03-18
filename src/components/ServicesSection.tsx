@@ -31,7 +31,7 @@ const services = [
 ];
 
 export const ServicesSection = () => (
-  <section id="services" className="py-[20vh] px-8 md:px-16 max-w-[1400px] mx-auto">
+  <section id="services" className="py-[20vh] px-4 sm:px-8 md:px-16 max-w-[1400px] mx-auto">
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}

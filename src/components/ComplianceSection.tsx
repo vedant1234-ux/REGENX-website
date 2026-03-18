@@ -52,7 +52,7 @@ const pillars = [
 ];
 
 export const ComplianceSection = () => (
-  <section className="py-[15vh] px-8 md:px-16 max-w-[1400px] mx-auto">
+  <section className="py-[15vh] px-4 sm:px-8 md:px-16 max-w-[1400px] mx-auto">
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}

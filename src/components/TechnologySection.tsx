@@ -138,8 +138,8 @@ export const TechnologySection = () => (
               </span>
             </div>
 
-            <div className="relative h-44 overflow-x-auto overflow-y-hidden">
-              <div className="min-w-[400px] h-full">
+            <div className="relative h-44 overflow-hidden">
+              <div className="w-full h-full">
               <svg viewBox="0 0 300 140" className="w-full h-full" preserveAspectRatio="none">
                 <defs>
                   <linearGradient id="area1" x1="0" y1="0" x2="0" y2="1">

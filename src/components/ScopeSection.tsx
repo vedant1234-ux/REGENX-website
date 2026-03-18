@@ -50,7 +50,7 @@ const highlights = [
 ];
 
 export const ScopeSection = () => (
-  <section className="py-[12vh] px-8 md:px-16 bg-muted">
+  <section className="py-[12vh] px-4 sm:px-8 md:px-16 bg-muted overflow-hidden">
     <div className="max-w-[1400px] mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 40 }}

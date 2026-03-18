@@ -1,7 +1,7 @@
 import { RegeneraxLogo } from "./RegeneraxLogo";
 
 export const Footer = () => (
-  <footer className="border-t border-border py-12 px-8 md:px-16">
+  <footer className="border-t border-border py-12 px-4 sm:px-8 md:px-16">
     <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
       <div className="flex items-center gap-4">
         <RegeneraxLogo className="h-16 w-16 object-contain shrink-0" />

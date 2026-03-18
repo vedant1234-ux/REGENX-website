@@ -4,7 +4,7 @@ import { Battery, Award } from "lucide-react";
 const transition = { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const };
 
 export const ResultsSection = () => (
-  <section className="py-[15vh] px-8 md:px-16 bg-muted">
+  <section className="py-[15vh] px-4 sm:px-8 md:px-16 bg-muted overflow-hidden">
     <div className="max-w-[1400px] mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 40 }}

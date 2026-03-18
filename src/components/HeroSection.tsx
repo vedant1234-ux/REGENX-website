@@ -10,19 +10,19 @@ const stats = [
 ];
 
 export const HeroSection = () => (
-  <section className="relative min-h-svh flex flex-col justify-end overflow-hidden">
+  <section className="relative min-h-svh flex flex-col justify-end overflow-hidden w-full">
     <div
       className="absolute inset-0 bg-cover bg-center"
       style={{ backgroundImage: `url(${heroBg})` }}
     />
     <div className="absolute inset-0 bg-background/60" />
 
-    <div className="relative z-10 p-4 sm:p-8 md:p-16 pt-32 md:pt-16">
+    <div className="relative z-10 p-4 sm:p-8 md:p-16 pt-32 md:pt-16 overflow-hidden">
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={transition}
-        className="font-mono text-[9px] xs:text-[10px] sm:text-xs tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-8 md:mb-12"
+        className="font-mono text-[9px] sm:text-xs tracking-[0.1em] sm:tracking-[0.2em] text-primary mb-8 md:mb-12 break-words"
       >
         RegeneraX / INDIA'S PIONEER IN BATTERY REGENERATION SINCE 2012
       </motion.div>
@@ -45,7 +45,7 @@ export const HeroSection = () => (
         transition={{ ...transition, delay: 0.3 }}
         className="mt-12 grid grid-cols-12 gap-6 border-t border-border pt-8"
       >
-        <p className="col-span-12 md:col-span-5 text-lg text-foreground/80 leading-relaxed">
+        <p className="col-span-12 md:col-span-5 text-base sm:text-lg text-foreground/80 leading-relaxed">
           Battery regeneration that extends battery life 2–3× and cuts operating
           costs by up to 70%. India's pioneer since 2012 — ISO 9001:2015 & ISO 14001:2015 certified.
         </p>

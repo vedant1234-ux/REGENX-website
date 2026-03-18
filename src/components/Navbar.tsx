@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { SuncLogo } from "./SuncLogo";
+import { RegeneraxLogo } from "./SuncLogo";
 
 const navLinks = [
   { label: "HOME", href: "#" },
@@ -31,10 +31,10 @@ export const Navbar = () => {
         scrolled ? "bg-background/90 backdrop-blur-md border-b border-border" : "bg-transparent"
       }`}
     >
-      <div className="max-w-[1400px] mx-auto flex items-center justify-between px-8 md:px-16 h-20">
-        <a href="#" className="flex items-center gap-2 group">
-          <SuncLogo className="h-16 w-16 object-contain transition-transform group-hover:scale-105" />
-          <span className="font-display font-bold text-xl tracking-tight text-foreground transition-colors group-hover:text-primary">SUN-C</span>
+      <div className="max-w-[1400px] mx-auto flex items-center justify-between px-4 sm:px-8 md:px-16 h-20">
+        <a href="#" className="flex items-center gap-2 group shrink-0">
+          <RegeneraxLogo className="h-12 w-12 sm:h-16 sm:w-16 object-contain transition-transform group-hover:scale-105" />
+          <span className="font-display font-bold text-lg sm:text-xl tracking-tight text-foreground transition-colors group-hover:text-primary">RegeneraX</span>
         </a>
 
         <div className="hidden lg:flex items-center gap-10">
@@ -74,7 +74,7 @@ export const Navbar = () => {
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="lg:hidden bg-background/95 backdrop-blur-md border-b border-border px-8 py-6 flex flex-col gap-4"
+          className="lg:hidden bg-background border-b border-border px-4 py-6 flex flex-col gap-4 shadow-xl"
         >
           {navLinks.map((link) => (
             <a

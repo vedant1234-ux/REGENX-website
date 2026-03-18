@@ -14,7 +14,7 @@ export const PartnersBar = () => (
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      className="px-8 md:px-16 mb-8"
+      className="px-4 sm:px-8 md:px-16 mb-8"
     >
       <span className="font-mono text-xs tracking-[0.2em] text-muted-foreground">
         TRUSTED BY INDUSTRY LEADERS

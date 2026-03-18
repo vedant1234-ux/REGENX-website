@@ -4,7 +4,7 @@ import { PartnersBar } from "@/components/PartnersBar";
 import { AboutSection } from "@/components/AboutSection";
 import { JourneySection } from "@/components/JourneySection";
 import { VisionSection } from "@/components/VisionSection";
-import { SuncSaysSection } from "@/components/SuncSaysSection";
+import { RegeneraxSaysSection } from "@/components/SuncSaysSection";
 import { ValuesSection } from "@/components/ValuesSection";
 import { DegradationSection } from "@/components/DegradationSection";
 import { ProblemSection } from "@/components/ProblemSection";
@@ -27,7 +27,7 @@ const Index = () => (
     <AboutSection />
     <JourneySection />
     <VisionSection />
-    <SuncSaysSection />
+    <RegeneraxSaysSection />
     <ValuesSection />
     <DegradationSection />
     <ProblemSection />

@@ -1,11 +1,21 @@
 <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="250" cy="250" r="230" fill="#8DC63F" />
-  <path d="M 120 70 A 210 210 0 0 1 380 70" fill="none" stroke="white" stroke-width="8" stroke-linecap="round" />
-  <path d="M 120 430 A 210 210 0 0 0 380 430" fill="none" stroke="white" stroke-width="8" stroke-linecap="round" />
-  <rect x="180" y="360" width="30" height="20" fill="#23254C" />
-  <rect x="290" y="360" width="30" height="20" fill="#23254C" />
-  <rect x="160" y="380" width="180" height="90" fill="transparent" stroke="#23254C" stroke-width="12" />
-  <rect x="190" y="420" width="20" height="6" fill="#23254C" />
-  <path d="M 290 413 v 20 M 280 423 h 20" fill="none" stroke="#23254C" stroke-width="6" />
-  <text x="250" y="320" font-family="'Inter', sans-serif" font-weight="900" font-size="160" fill="#23254C" text-anchor="middle" letter-spacing="-2">SUN-C</text>
+  <circle cx="250" cy="250" r="230" fill="url(#favGradient)" />
+  <path 
+    d="M290 120L190 270H265L215 370L315 220H240L290 120Z" 
+    fill="white" 
+  />
+  <path 
+    d="M250 20C312 20 369 47 407 91L437 56V156H337L372 121C342 88 298 68 250 68C188 68 135 101 105 151L63 126C100 61 170 20 250 20Z" 
+    fill="#4ade80" 
+  />
+  <path 
+    d="M250 480C188 480 131 453 93 409L63 444V344H163L128 379C158 412 202 432 250 432C312 432 365 399 395 349L437 374C400 439 330 480 250 480Z" 
+    fill="#22c55e" 
+  />
+  <defs>
+    <linearGradient id="favGradient" x1="50" y1="50" x2="450" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stopColor="#166534" />
+      <stop offset="1" stopColor="#14532d" />
+    </linearGradient>
+  </defs>
 </svg>

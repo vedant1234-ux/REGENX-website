@@ -4,19 +4,19 @@ import { Phone, Mail, Globe, MapPin } from "lucide-react";
 const transition = { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const };
 
 const contactInfo = [
-  { icon: Phone, label: "PHONE / WHATSAPP", value: "+91 84850 65036" },
-  { icon: Mail, label: "MAIL", value: "info@suncbattery.com" },
-  { icon: Globe, label: "WEBSITE", value: "www.suncbattery.com" },
+  { icon: Phone, label: "PHONE / WHATSAPP", value: "+91 94252 46162" },
+  { icon: Mail, label: "MAIL", value: "shelly.joseph29@regenerax.com" },
+  { icon: Globe, label: "WEBSITE", value: "www.regenerax.com" },
   {
     icon: MapPin,
     label: "ADDRESS",
     value:
-      "Sr.No.25, Opposite Savali Dhaba, Nr. Swami Samarth Temple, Sinhgad Road, Nanded Fata, Pune, Maharashtra, 411041",
+      "E A 125 IDA Scheme 94, Ring Road, Sector A Indore MP 452001",
   },
 ];
 
 export const ContactSection = () => (
-  <section id="contact" className="py-[15vh] px-8 md:px-16 max-w-[1400px] mx-auto">
+  <section id="contact" className="py-[15vh] px-4 sm:px-8 md:px-16 max-w-[1400px] mx-auto border-t border-border">
     <div className="grid grid-cols-12 gap-6 md:gap-12">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -30,10 +30,13 @@ export const ContactSection = () => (
           Thank You!
         </h2>
         <p className="font-display text-2xl font-bold text-foreground/80 mt-2">
-          Contact Us
+          M A Joseph
+        </p>
+        <p className="font-mono text-xs tracking-[0.1em] text-primary uppercase">
+          Energy Solutions Consultant
         </p>
         <p className="text-foreground/70 leading-relaxed text-lg mt-6">
-          Ready to revolutionize your battery management? Get in touch with SUN-C today.
+          Ready to revolutionize your battery management? Get in touch with RegeneraX today.
         </p>
 
         <div className="mt-10 space-y-6">
@@ -68,7 +71,7 @@ export const ContactSection = () => (
           className="mt-12 border border-primary/30 p-6 text-center"
         >
           <p className="font-display text-lg font-bold text-primary">
-            Battery Wahi.. Life Nayi!
+            Extend Your Battery Life 2X
           </p>
         </motion.div>
       </motion.div>

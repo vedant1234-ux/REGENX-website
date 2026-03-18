@@ -7,13 +7,13 @@ const highlights = [
   { icon: Battery, text: "Restores up to 90% Battery Capacity" },
   { icon: Target, text: "Saves up to 70% on Costs" },
   { icon: Clock, text: "Extends Battery Life by 2–3×" },
-  { icon: Award, text: "Up to 1-Year Warranty Provided" },
+  { icon: Award, text: "Upto 2 Year Warranty Provided" },
   { icon: Building2, text: "50,000+ Batteries Regenerated across 400+ Centers" },
   { icon: ShieldCheck, text: "ISO 9001:2015 & ISO 14001:2015 Certified" },
 ];
 
 export const AboutSection = () => (
-  <section id="about" className="py-[15vh] px-8 md:px-16 max-w-[1400px] mx-auto">
+  <section id="about" className="py-[15vh] px-4 sm:px-8 md:px-16 max-w-[1400px] mx-auto overflow-hidden">
     <div className="grid grid-cols-12 gap-6 md:gap-12">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -36,7 +36,7 @@ export const AboutSection = () => (
         className="col-span-12 md:col-span-6 md:col-start-7"
       >
         <p className="text-foreground/70 leading-relaxed text-lg">
-          SUN-C is driven by a passion for sustainable energy solutions. To transform energy
+          RegeneraX is driven by a passion for sustainable energy solutions. To transform energy
           storage through advanced battery regeneration technology, working toward a future where
           every battery is regenerated before the end of its lifecycle. With 13+ years of experience
           and 50,000+ batteries regenerated, we are India's most trusted battery regeneration company.

@@ -8,25 +8,13 @@ const points = [
     icon: Lightbulb,
     title: "Innovative Technology",
     description:
-      "SUN-C Technology significantly enhances battery life and performance.",
+      "RegeneraX Technology significantly enhances battery life and performance.",
   },
   {
     icon: Leaf,
     title: "Sustainability Focus",
     description:
       "Promotes environmentally friendly method for battery regeneration and recycling.",
-  },
-  {
-    icon: Handshake,
-    title: "Partnership Opportunities",
-    description:
-      "Collaboration with businesses for implementation and scaling technology.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Market Potential",
-    description:
-      "Growing demand for battery regeneration solutions in various industries.",
   },
   {
     icon: DollarSign,
@@ -38,12 +26,12 @@ const points = [
     icon: Rocket,
     title: "Get Involved",
     description:
-      "Join us in revolutionizing the battery industry through SUN-C technology.",
+      "Join us in revolutionizing the battery industry through RegeneraX technology.",
   },
 ];
 
 export const CtaSection = () => (
-  <section className="py-[15vh] px-8 md:px-16 max-w-[1400px] mx-auto">
+  <section className="py-[15vh] px-4 sm:px-8 md:px-16 max-w-[1400px] mx-auto">
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -63,12 +51,6 @@ export const CtaSection = () => (
           className="h-14 px-8 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-300 uppercase tracking-[0.15em] text-sm font-bold flex items-center justify-center"
         >
           Regenerate Your Old Battery
-        </a>
-        <a
-          href="#contact"
-          className="h-14 px-8 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300 uppercase tracking-[0.15em] text-sm font-bold flex items-center justify-center"
-        >
-          Become a SUN-C Business Partner
         </a>
       </div>
     </motion.div>

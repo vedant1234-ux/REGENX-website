@@ -4,7 +4,7 @@ import { ArrowRight, Zap, BatteryCharging } from "lucide-react";
 const transition = { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const };
 
 export const TechnologySection = () => (
-  <section className="py-[12vh] px-8 md:px-16 bg-muted">
+  <section className="py-[12vh] px-4 sm:px-8 md:px-16 bg-muted">
     <div className="max-w-[1400px] mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -131,14 +131,15 @@ export const TechnologySection = () => (
                 <span className="w-2.5 h-2.5 rounded-full bg-cyan-300/40" /> Normal Life
               </span>
               <span className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-cyan-400/60" /> SUN-C RGX
+                <span className="w-2.5 h-2.5 rounded-full bg-cyan-400/60" /> RegeneraX RGX
               </span>
               <span className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-cyan-600" /> SUN-C Boost
+                <span className="w-2.5 h-2.5 rounded-full bg-cyan-600" /> RegeneraX Boost
               </span>
             </div>
 
-            <div className="relative h-44">
+            <div className="relative h-44 overflow-x-auto overflow-y-hidden">
+              <div className="min-w-[400px] h-full">
               <svg viewBox="0 0 300 140" className="w-full h-full" preserveAspectRatio="none">
                 <defs>
                   <linearGradient id="area1" x1="0" y1="0" x2="0" y2="1">
@@ -160,17 +161,18 @@ export const TechnologySection = () => (
                 ))}
                 {/* Normal Life area */}
                 <path d="M 0 120 L 60 115 L 120 110 L 180 100 L 240 85 L 300 70 L 300 140 L 0 140 Z" fill="url(#area1)" />
-                {/* SUN-C RGX area */}
+                {/* RegeneraX RGX area */}
                 <path d="M 0 130 L 60 120 L 120 100 L 180 80 L 240 55 L 300 35 L 300 140 L 0 140 Z" fill="url(#area2)" />
-                {/* SUN-C Boost area */}
+                {/* RegeneraX Boost area */}
                 <path d="M 0 135 L 60 128 L 120 115 L 180 95 L 240 70 L 300 15 L 300 140 L 0 140 Z" fill="url(#area3)" />
               </svg>
             </div>
-
-            <div className="flex justify-between text-[10px] font-mono text-muted-foreground mt-2">
-              <span>2020</span><span>2022</span><span>2024</span><span>2026</span><span>2028</span>
-            </div>
           </div>
+
+          <div className="flex justify-between text-[10px] font-mono text-muted-foreground mt-2">
+            <span>2020</span><span>2022</span><span>2024</span><span>2026</span><span>2028</span>
+          </div>
+        </div>
 
           {/* Bottom result banner */}
           <motion.div

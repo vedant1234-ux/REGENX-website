@@ -7,7 +7,7 @@ const steps = [
   {
     icon: Battery,
     title: "Battery Intake",
-    description: "Weak/drained battery brought to SUN-C center.",
+    description: "Weak/drained battery brought to RegeneraX center.",
     color: "bg-red-400",
   },
   {
@@ -20,7 +20,7 @@ const steps = [
     icon: Cpu,
     title: "Regeneration",
     description:
-      "Regeneration on SUN-C Regenerator using controlled current pulse technology.",
+      "Regeneration on RegeneraX Regenerator using controlled current pulse technology.",
     color: "bg-emerald-400",
   },
   {
@@ -32,13 +32,13 @@ const steps = [
   {
     icon: Zap,
     title: "Ready to Dispatch",
-    description: "Battery ready to dispatch & re-use with up to 1-year warranty.",
+    description: "Battery ready to dispatch & re-use with Upto 2 year warranty.",
     color: "bg-primary",
   },
 ];
 
 export const ProcessSection = () => (
-  <section id="process" className="py-[15vh] px-8 md:px-16 max-w-[1400px] mx-auto">
+  <section id="process" className="py-[15vh] px-4 sm:px-8 md:px-16 max-w-[1400px] mx-auto">
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}

@@ -14,7 +14,7 @@ const values = [
     icon: ShieldCheck,
     title: "Excellence",
     description:
-      "SUN-C environmental stewardship. We aim to transform battery management through innovative technology.",
+      "RegeneraX environmental stewardship. We aim to transform battery management through innovative technology.",
   },
   {
     icon: Users,
@@ -31,7 +31,7 @@ const values = [
 ];
 
 export const ValuesSection = () => (
-  <section className="py-[15vh] px-8 md:px-16 bg-muted">
+  <section id="values" className="py-[15vh] px-4 sm:px-8 md:px-16 max-w-[1400px] mx-auto">
     <div className="max-w-[1400px] mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 40 }}

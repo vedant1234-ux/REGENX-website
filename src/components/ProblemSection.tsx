@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, AlertTriangle, Phone, Search, RefreshCw } from "lucide-react";
+import { ArrowDown, AlertTriangle, Phone, Search, RefreshCw, Zap } from "lucide-react";
 
 const transition = { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const };
 
@@ -13,11 +13,18 @@ const traditionalSteps = [
   { icon: AlertTriangle, label: "Weak Backup", accent: true },
   { icon: Phone, label: "Call Maintenance Team", accent: false },
   { icon: Search, label: "Team Checks Battery Health", accent: false },
-  { icon: RefreshCw, label: "Replace Battery", accent: true },
+  { icon: RefreshCw, label: "Replace Battery", accent: true, error: true },
+];
+
+const regeneraxSteps = [
+  { icon: AlertTriangle, label: "Weak Backup", accent: true },
+  { icon: Phone, label: "Call RegeneraX Team", accent: false },
+  { icon: Search, label: "Expert Battery Diagnostic", accent: false },
+  { icon: Zap, label: "REGENERATE NOT REPLACE", accent: true, primary: true },
 ];
 
 export const ProblemSection = () => (
-  <section className="py-[15vh] px-8 md:px-16 max-w-[1400px] mx-auto">
+  <section className="py-[15vh] px-4 sm:px-8 md:px-16 max-w-[1400px] mx-auto">
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -109,35 +116,69 @@ export const ProblemSection = () => (
         </div>
       </motion.div>
 
-      {/* Right: Traditional Solution Flow */}
+      {/* Right: Solution Flows */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ ...transition, delay: 0.2 }}
-        className="flex flex-col items-center justify-center gap-0"
+        className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-4"
       >
-        <h3 className="font-display text-lg font-bold mb-8 self-start">
-          Traditional Solution
-        </h3>
-
-        {traditionalSteps.map((step, i) => (
-          <div key={i} className="flex flex-col items-center w-full max-w-xs">
-            <div
-              className={`w-full py-4 px-6 text-center font-display font-bold text-sm tracking-wide border-2 transition-colors ${
-                step.accent
-                  ? "border-amber-500/60 bg-amber-500/10 text-amber-400"
-                  : "border-primary/40 bg-primary/5 text-foreground"
-              }`}
-            >
-              <step.icon className="w-4 h-4 inline-block mr-2 -mt-0.5" />
-              {step.label}
-            </div>
-            {i < traditionalSteps.length - 1 && (
-              <ArrowDown className="w-5 h-5 text-muted-foreground my-3" />
-            )}
+        {/* Traditional */}
+        <div className="flex flex-col items-center">
+          <h3 className="font-mono text-[10px] tracking-[0.2em] text-muted-foreground mb-6 uppercase">
+            Traditional Solution
+          </h3>
+          <div className="flex flex-col items-center w-full">
+            {traditionalSteps.map((step, i) => (
+              <div key={i} className="flex flex-col items-center w-full">
+                <div
+                  className={`w-full py-4 px-4 text-center font-display font-bold text-[11px] leading-tight tracking-wide border-2 transition-colors ${
+                    step.error
+                      ? "border-red-500/40 bg-red-500/5 text-red-400"
+                      : step.accent
+                      ? "border-amber-500/40 bg-amber-500/5 text-amber-400"
+                      : "border-border bg-background/50 text-foreground/60"
+                  }`}
+                >
+                  <step.icon className="w-3.5 h-3.5 inline-block mr-2 -mt-0.5" />
+                  {step.label}
+                </div>
+                {i < traditionalSteps.length - 1 && (
+                  <ArrowDown className="w-4 h-4 text-muted-foreground/30 my-2" />
+                )}
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+
+        {/* RegeneraX */}
+        <div className="flex flex-col items-center">
+          <h3 className="font-mono text-[10px] tracking-[0.2em] text-primary mb-6 uppercase">
+            RegeneraX Solution
+          </h3>
+          <div className="flex flex-col items-center w-full">
+            {regeneraxSteps.map((step, i) => (
+              <div key={i} className="flex flex-col items-center w-full">
+                <div
+                  className={`w-full py-4 px-4 text-center font-display font-bold text-[11px] leading-tight tracking-wide border-2 transition-all duration-300 ${
+                    step.primary
+                      ? "border-primary bg-primary text-primary-foreground shadow-[0_0_20px_rgba(34,197,94,0.3)] scale-105"
+                      : step.accent
+                      ? "border-amber-500/40 bg-amber-500/5 text-amber-400"
+                      : "border-primary/30 bg-primary/5 text-foreground"
+                  }`}
+                >
+                  <step.icon className="w-3.5 h-3.5 inline-block mr-2 -mt-0.5" />
+                  {step.label}
+                </div>
+                {i < regeneraxSteps.length - 1 && (
+                  <ArrowDown className="w-4 h-4 text-primary/30 my-2" />
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
       </motion.div>
     </div>
   </section>

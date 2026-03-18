@@ -30,7 +30,7 @@ export const ResultsSection = () => (
           className="col-span-12 md:col-span-8 md:col-start-3"
         >
           <p className="text-foreground/80 text-lg md:text-xl leading-relaxed text-center">
-            SUN-C Battery specializes in the regeneration of lead-acid batteries,
+            RegeneraX Battery specializes in the regeneration of lead-acid batteries,
             offering in-house technology and machines designed to extend battery life by 2–3× and
             cut operating costs by up to 70%.
           </p>

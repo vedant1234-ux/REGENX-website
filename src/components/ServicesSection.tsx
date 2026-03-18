@@ -14,17 +14,17 @@ const services = [
     icon: Wrench,
     title: "Regeneration & Optimization",
     description:
-      "Using SUN-C Regenerator, we restore lost capacity and improve charge efficiency through controlled current pulsation.",
+      "Using RegeneraX Regenerator, we restore lost capacity and improve charge efficiency through controlled current pulsation.",
   },
   {
     icon: ShieldCheck,
     title: "Validation & Quality Assurance",
     description:
-      "Every regenerated battery is tested and certified to deliver reliable performance with up to 1-year warranty.",
+      "Every regenerated battery is tested and certified to deliver reliable performance with Upto 2 year warranty.",
   },
   {
     icon: Zap,
-    title: "SUN-C Regenerator",
+    title: "RegeneraX Regenerator",
     description:
       "Our proprietary in-house regeneration hardware uses advanced pulsation technology to reverse sulfation and restore up to 90% battery capacity.",
   },

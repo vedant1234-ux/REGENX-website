@@ -3,7 +3,7 @@ import { Trophy } from "lucide-react";
 
 const transition = { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const };
 
-export const SuncSaysSection = () => (
+export const RegeneraxSaysSection = () => (
   <section className="py-[12vh] px-8 md:px-16 border-t border-b border-border">
     <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
       <motion.div
@@ -13,7 +13,7 @@ export const SuncSaysSection = () => (
         transition={transition}
       >
         <span className="font-mono text-xs tracking-[0.2em] text-primary block mb-4">
-          04 / SUN-C SAYS
+          04 / REGENERAX SAYS
         </span>
         <h2 className="font-display text-3xl md:text-5xl font-bold tracking-[-0.02em] leading-[1.1]">
           DO NOT REPLACE —

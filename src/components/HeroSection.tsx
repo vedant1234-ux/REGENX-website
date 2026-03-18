@@ -17,21 +17,21 @@ export const HeroSection = () => (
     />
     <div className="absolute inset-0 bg-background/60" />
 
-    <div className="relative z-10 p-8 md:p-16">
+    <div className="relative z-10 p-4 sm:p-8 md:p-16 pt-32 md:pt-16">
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={transition}
-        className="font-mono text-xs tracking-[0.2em] text-primary mb-12"
+        className="font-mono text-[10px] sm:text-xs tracking-[0.2em] text-primary mb-12"
       >
-        SUN-C / INDIA'S PIONEER IN BATTERY REGENERATION SINCE 2012
+        RegeneraX / INDIA'S PIONEER IN BATTERY REGENERATION SINCE 2012
       </motion.div>
 
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ...transition, delay: 0.15 }}
-        className="font-display text-[10vw] md:text-[8vw] lg:text-[6vw] font-bold leading-[0.9] tracking-[-0.04em] uppercase max-w-5xl"
+        className="font-display text-5xl sm:text-7xl md:text-[8vw] lg:text-[6vw] font-bold leading-[0.9] tracking-[-0.04em] uppercase max-w-5xl"
       >
         Battery{" "}
         <span className="text-primary">Regeneration</span>

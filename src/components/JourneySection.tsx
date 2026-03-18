@@ -55,7 +55,7 @@ const milestones = [
 ];
 
 export const JourneySection = () => (
-  <section id="journey" className="py-[15vh] px-8 md:px-16 bg-background">
+  <section id="journey" className="py-[15vh] px-4 sm:px-8 md:px-16 max-w-[1400px] mx-auto border-t border-border">
     <div className="max-w-[1400px] mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
